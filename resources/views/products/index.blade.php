@@ -2,7 +2,10 @@
 
 @section('content')
 <h1>Products</h1>
-<a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Create Product</a>
+<div class="d-flex justify-content-end mb-3">
+    <a href="{{ route('products.create') }}" class="btn btn-primary me-2">Create Product</a>
+    <a href="{{ route('categories.index') }}" class="btn btn-secondary">Category Listing</a>
+</div>
 <table class="table table-bordered">
     <thead>
         <tr>
